@@ -1,18 +1,32 @@
-//
-//  ViewController.swift
-//  Swift Fun
-//
-//  Created by Jack B. Legate on 9/9/19.
-//  Copyright © 2019 Jack B. Legate. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    var numTapCount = 0
+    
+    @IBOutlet weak var MyLabel: UILabel!
+    
+    @IBAction func ButtonTapped(_ sender: Any) {
+        numTapCount = numTapCount + 1
+        if numTapCount == 5{
+        print(numTapCount)
+        view.backgroundColor = UIColor.orange
+        
+        MyLabel.text = "JOE MAMA"
+        MyLabel.textColor = UIColor.blue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = UIColor.cyan
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 
 
