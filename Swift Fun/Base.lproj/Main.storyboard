@@ -49,6 +49,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2Q-yv-D6f">
+                                <rect key="frame" x="163" y="87" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,7 +59,9 @@
                             <constraint firstItem="WLi-ce-IIp" firstAttribute="top" secondItem="VII-zh-76D" secondAttribute="bottom" constant="50" id="Mxt-wQ-aaS"/>
                             <constraint firstItem="WjS-w0-Jia" firstAttribute="top" secondItem="XGj-fM-Ecd" secondAttribute="bottom" constant="100" id="OqU-2A-IeW"/>
                             <constraint firstItem="VII-zh-76D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBQ-n4-Ycl"/>
+                            <constraint firstItem="VII-zh-76D" firstAttribute="top" secondItem="b2Q-yv-D6f" secondAttribute="bottom" constant="45" id="Y7R-Iy-rx8"/>
                             <constraint firstItem="WjS-w0-Jia" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aRb-ur-NNq"/>
+                            <constraint firstItem="b2Q-yv-D6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXd-VQ-gAI"/>
                             <constraint firstItem="XGj-fM-Ecd" firstAttribute="top" secondItem="WLi-ce-IIp" secondAttribute="bottom" constant="50" id="nYp-a8-fHL"/>
                             <constraint firstItem="XGj-fM-Ecd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5x-lm-706"/>
                             <constraint firstItem="WLi-ce-IIp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uCu-YS-6iS"/>
@@ -67,6 +72,7 @@
                         <outlet property="BottomTextField" destination="WLi-ce-IIp" id="n4a-y4-2GF"/>
                         <outlet property="MyLabel" destination="XGj-fM-Ecd" id="bKn-pu-4ra"/>
                         <outlet property="TopTextField" destination="VII-zh-76D" id="Mzh-8x-bnS"/>
+                        <outlet property="additionSwitch" destination="b2Q-yv-D6f" id="Xka-C7-M4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

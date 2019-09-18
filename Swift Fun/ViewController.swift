@@ -8,13 +8,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var MyLabel: UILabel!
     @IBOutlet weak var TopTextField: UITextField!
     @IBOutlet weak var BottomTextField: UITextField!
+    @IBOutlet weak var additionSwitch: UISwitch!
+    
     
     @IBAction func ButtonTapped(_ sender: Any) {
      
+        let addition = additionSwitch.isOn
         
-        var sum = Double(TopTextField.text!)! + Double(BottomTextField.text!)!
+        if(addition){
+            let sum = Double(TopTextField.text!)! + Double(BottomTextField.text!)!
+            
+            MyLabel.text = "\(TopTextField.text!) + \(BottomTextField.text!) = \(sum)"
+        } else {
+            let difference = Double(TopTextField.text!)! - Double(BottomTextField.text!)!
+            
+            MyLabel.text = "\(TopTextField.text!) - \(BottomTextField.text!) = \(difference)"
+        }
         
-        MyLabel.text = "\(TopTextField.text!) + \(BottomTextField.text!) = \(sum)"
+        
         
         
         
